@@ -1,0 +1,31 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing:border-box;
+
+}
+.loader{
+	position:relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+
+
+}
+.loader div{
+    position:absolute;
+    top:200px;
+    width: 200px;
+    height: 200px;
+    border-radius:50%;
+    background: rgb(131,58,180);
+    background: linear-gradient(-190deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    animation:load 3s infinite;
+
+}
+@keyframes load{
+	0%{
+		transform: rotate(360deg);
+	}
+}
